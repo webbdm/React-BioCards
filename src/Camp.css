@@ -2,7 +2,9 @@
   text-align: center;
   background-color: #2C7E9A;
   max-width: 450px;
+  border: 3px solid gray;
   border-radius: 12px;
+  box-shadow: 7px 7px 5px #888888;
 }
 
 .Card-image {
@@ -15,16 +17,11 @@
 }
 
 .Info-card p{
-  border: 1px solid navy;
+  /*border: 1px solid navy;*/
   height: 100px;
 }
 
 .Info{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   border-radius: 12px;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

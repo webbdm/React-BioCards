@@ -5,5 +5,5 @@ import './index.css';
 
 ReactDOM.render(
   <Camp />,
-  document.getElementById('root')
+document.getElementById('root')
 );

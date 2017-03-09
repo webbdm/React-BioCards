@@ -26,7 +26,7 @@ var JOBS = [
     title: "Social Media Marketing Intern",
     date: "August - Dec. 2014",
     info:"Social Media",
-    mogo: "images/RHP.png"
+    mlogo: "images/RHP.png"
   }
 
 ];

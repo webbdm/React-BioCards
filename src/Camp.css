@@ -1,3 +1,10 @@
+.Center {
+  display: block;
+  width: 50%;
+  margin: 70px auto;
+}
+
+
 .Card {
   text-align: center;
   background-color: #2C7E9A;

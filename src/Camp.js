@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './Camp.css';
+
 
 class Camp extends Component {
    render(){
     return(
       <div className="Card">
         <h1>React</h1>
-        <img src={logo} className="Card-image" alt="logo" />
-        <h2>State</h2>
+        <img src={"this.props.jobs[0].mlogo"} className="Card-image" alt="logo" />
+        <h2>{this.props.jobs[0].name}</h2>
         <div className="Info-card">
-          <span>June</span>
+          <h3>{this.props.jobs[0].title}</h3>
           <div className="Info">
-            <p>Info goes here</p>
+            <p>{this.props.jobs[0].date}</p>
+            <p>{this.props.jobs[0].info}</p>
           </div>
         </div>
       </div>

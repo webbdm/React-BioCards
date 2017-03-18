@@ -1,13 +1,23 @@
+.Center {
+  display: block;
+  width: 50%;
+  margin: 70px auto;
+}
+
+
 .Card {
   text-align: center;
   background-color: #2C7E9A;
   max-width: 450px;
+  border: 3px solid gray;
   border-radius: 12px;
+  box-shadow: 7px 7px 5px #888888;
 }
 
 .Card-image {
 
   height: 80px;
+  width: 80px;
 }
 
 .Info-card span {
@@ -15,16 +25,11 @@
 }
 
 .Info-card p{
-  border: 1px solid navy;
-  height: 100px;
+  /*border: 1px solid navy;*/
+  height: 50px;
 }
 
 .Info{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   border-radius: 12px;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

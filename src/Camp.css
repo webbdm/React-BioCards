@@ -19,9 +19,9 @@
   display:flex;
   flex-direction:row;
   text-align: center;
-  background-color: #352B2B;
-  width: 700px;
-  border: 3px solid black;
+  background-color: #292727;
+  max-width: 990px;
+  /*border: 3px solid black;*/
   border-radius: 5px;
   box-shadow: 7px 7px 5px #888888;
 }
@@ -76,18 +76,17 @@
 
 .Card {
   text-align: center;
-  background-color: #352B2B;
-  height: 520px;
+  background-color: #444040;
+  height: 510px;
   width: 350px;
-  border: 3px solid black;
-  border-radius: 5px;
-  box-shadow: 7px 7px 5px #888888;
+  margin: 20px 20px 20px 60px;
+  /*border: 3px solid black;*/
+  /*box-shadow: 7px 7px 5px #888888;*/
   color: white;
 }
 
 .Card h2, h3{
   margin: 5px;
-
 }
 
 .Card-image {

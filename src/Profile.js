@@ -8,13 +8,12 @@ class Profile extends Component {
     return(
       <div className="Wrapper">
         <Resume jobs={this.props.jobs}/>
-        <Camp jobs={this.props.jobs}/>
       </div>
     );
   }
 }
 
-class Resume extends Component{
+class Resume extends Component {
   render(){
     return(
       <div className="resume">
@@ -24,6 +23,7 @@ class Resume extends Component{
          <div className="experience">
          <MyXP/>
          </div>
+         <Camp jobs={this.props.jobs}/>
       </div>
     );
   }
@@ -34,7 +34,7 @@ class Camp extends Component {
     return(
       <div className="Center">
         <div className="Card">
-          <h1></h1>
+          <h2></h2>
           <img src={this.props.jobs[0].mlogo} className="Card-image" alt="logo" />
           <h2>{this.props.jobs[0].name}</h2>
           <div className="Info-card">
@@ -72,19 +72,28 @@ class MyXP extends Component {
         <div className="jobDiv">
 
           <div className="jobLine">
-            <h3>Rockhouse Partners</h3>
+            <h3>Gilbert McLaughlin Casella Architects</h3>
+            <p>Marketing Coordinator</p>
+            <p>Feb. 2015 - Present</p>
+          </div>
+
+          <div className="jobLine">
+            <h3>Crowd Surf</h3>
             <p>Marketing Intern</p>
-            <p>Spring 2014</p>
-            <p>Responsibilities</p>
+            <p>Fall 2014</p>
           </div>
 
           <div className="jobLine">
             <h3>MCN Interactive</h3>
             <p>Marketing Intern</p>
             <p>Summer 2014</p>
-            <p>Responsibilities</p>
           </div>
 
+          <div className="jobLine">
+            <h3>Rockhouse Partners</h3>
+            <p>Marketing Intern</p>
+            <p>Spring 2014</p>
+          </div>
 
         </div>
       </div>

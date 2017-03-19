@@ -56,7 +56,7 @@ class MyInfo extends Component {
       <div className="myInfo">
         <h2>Geoff Webb</h2>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>
-        <h3>Title</h3>
+        <h3>Web Developer</h3>
         <p>Belmont University</p>
         <p>Bio</p>
       </div>

@@ -57,7 +57,9 @@ class MyInfo extends Component {
         <h2>Geoff Webb</h2>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>
         <h3>Web Developer</h3>
-        <p>Belmont University</p>
+        <h4>Education</h4>
+        <p>Nashville Software School 2017</p>
+        <p>Belmont University 2014</p>
         <p>Bio</p>
       </div>
     );

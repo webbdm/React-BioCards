@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Camp from './Camp';
+import Profile from './Profile.js';
 import './index.css';
 
 var JOBS = [
@@ -33,6 +33,6 @@ var JOBS = [
 
 
 ReactDOM.render(
-  <Camp jobs={JOBS}/>,
+  <Profile jobs={JOBS}/>,
 document.getElementById('root')
 );

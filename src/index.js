@@ -10,7 +10,7 @@ var JOBS = [
     title: "Marketing Intern",
     date: "Jan - May 2014",
     info: "Assisted the marketing team with content, social media, and email marketing.",
-    mlogo: "images/RHP.png"
+    mlogo: "http://rockhouse.wpengine.com/wp-content/uploads/2015/01/RHP_logo_three-colorr.png"
   },
 
   {

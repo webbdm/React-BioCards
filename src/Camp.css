@@ -41,6 +41,19 @@
 
 }
 
+.infoDiv {
+  text-align: left;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: #444040;
+}
+
+.logoDiv img {
+  height: 35px;
+  width: 35px;
+
+}
+
 /* Experience */
 .myXP{
   color: white;

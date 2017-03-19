@@ -10,7 +10,6 @@ class Profile extends Component {
         <Resume jobs={this.props.jobs}/>
         <Camp jobs={this.props.jobs}/>
       </div>
-
     );
   }
 }
@@ -73,9 +72,16 @@ class MyXP extends Component {
         <div className="jobDiv">
 
           <div className="jobLine">
-            <h3>Company</h3>
-            <h4>Title</h4>
+            <h3>Rockhouse Partners</h3>
+            <p>Marketing Intern</p>
             <p>Spring 2014</p>
+            <p>Responsibilities</p>
+          </div>
+
+          <div className="jobLine">
+            <h3>MCN Interactive</h3>
+            <p>Marketing Intern</p>
+            <p>Summer 2014</p>
             <p>Responsibilities</p>
           </div>
 

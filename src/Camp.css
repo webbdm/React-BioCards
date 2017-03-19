@@ -1,6 +1,8 @@
 .Wrapper {
+  display:flex;
+  flex-direction:row;
   background-color: white;
-
+  border: 1px solid black;
 }
 
 .Wrapper h1{
@@ -15,16 +17,20 @@
 }*/
 
 .resume {
+  display:flex;
+  flex-direction:row;
   text-align: center;
   background-color: #2C7E9A;
-  max-width: 450px;
+  width: 700px;
   border: 3px solid gray;
   border-radius: 5px;
   box-shadow: 7px 7px 5px #888888;
 }
 
+/* My Info */
+
 .myInfo{
-  width: 600px;
+  width: 300px;
   text-align: center;
 }
 
@@ -34,12 +40,21 @@
 
 }
 
+/* Experience */
+.jobDiv{
+  text-align: left;
+}
+
+.jobDiv p{
+  margin: 2px;
+}
+
 /* Job Card */
 
 .Card {
   text-align: center;
   background-color: #2C7E9A;
-  max-width: 450px;
+  max-width: 800px;
   border: 3px solid gray;
   border-radius: 5px;
   box-shadow: 7px 7px 5px #888888;

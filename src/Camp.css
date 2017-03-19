@@ -1,23 +1,54 @@
-.Center {
+.Wrapper {
+  background-color: white;
+
+}
+
+.Wrapper h1{
+
+
+}
+
+/*.Center {
   display: block;
   width: 50%;
   margin: 70px auto;
+}*/
+
+.resume {
+  text-align: center;
+  background-color: #2C7E9A;
+  max-width: 450px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  box-shadow: 7px 7px 5px #888888;
 }
 
+.myInfo{
+  width: 600px;
+  text-align: center;
+}
+
+.myInfo img {
+  height: 150px;
+  width: 150px;
+
+}
+
+/* Job Card */
 
 .Card {
   text-align: center;
   background-color: #2C7E9A;
   max-width: 450px;
   border: 3px solid gray;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: 7px 7px 5px #888888;
 }
 
 .Card-image {
 
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 120px;
 }
 
 .Info-card span {

@@ -17,6 +17,7 @@ class Resume extends Component {
   render(props){
     return(
       <div className="resume">
+         <div className="nav">{/*GEOFF <span>WEB</span>B*/}</div>
          <div className="my-info">
             <MyInfo/>
          </div>
@@ -54,9 +55,9 @@ class MyInfo extends Component {
    render(){
     return(
       <div className="myInfo">
-        <h2>Geoff Webb</h2>
+        <h2></h2>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>
-        <h3>Web Developer</h3>
+        <h3></h3>
         <div className="logoDiv">
           <img src="https://angular.io/resources/images/logos/angular2/angular.svg" alt="Angular"/>
           <img src="http://tomwayson.github.io/mwd-jsapi/img/react-logo.png" alt="React"/>

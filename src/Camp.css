@@ -31,7 +31,7 @@
 }
 
 .nav span {
-  color: #AD0D26;
+  color: #292727;
 }
 
 /* My Info */
@@ -58,8 +58,33 @@
 
 .infoDiv {
   text-align: left;
+  max-width: 240px;
   padding: 5px 10px;
   background-color: #444040;
+}
+
+.infoDiv h4 {
+  margin: 7px 0px 7px 5px;
+  border-bottom: 2px solid #3F7FBF;
+  width: 78px;
+}
+
+.infoDiv p {
+  margin: 0px 5px 5px 5px;
+}
+
+.infoDiv span {
+  font-size: 13px;
+  color: #292727;
+}
+
+.bio {
+  padding: 20px 0px 15px 0px;
+}
+
+.degree {
+  font-size: 11px;
+  margin: 0px 0px 60px 0px;
 }
 
 .logoDiv {

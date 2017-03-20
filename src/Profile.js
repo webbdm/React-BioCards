@@ -66,9 +66,11 @@ class MyInfo extends Component {
 
         <div className="infoDiv">
           <h4>Education</h4>
-          <p>Nashville Software School 2017</p>
-          <p>Belmont University 2014</p>
-          <p>Bio</p>
+          <p>Nashville Software School    <span>  2017</span></p>
+            <p className="degree">Front End & C# / .NET</p>
+          <p>Belmont University   <span> 2014</span></p>
+            <p className="degree">Music Business & Marketing</p>
+          <p className="bio">Apprentice software developer at Nashville Software School and marketing professional.</p>
         </div>
       </div>
     );

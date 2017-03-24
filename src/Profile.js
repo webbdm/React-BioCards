@@ -3,19 +3,13 @@ import React, { Component } from 'react';
 import './Camp.css';
 // import './Camp.js';
 
-class Profile extends Component {
-   render(props){
-    return(
+const Profile = (props) =>
+   
       <div className="Wrapper">
-        <Resume jobs={this.props.jobs}/>
-      </div>
-    );
-  }
-}
+        <Resume jobs={props.jobs}/>
+      </div>;
 
-class Resume extends Component {
-  render(props){
-    return(
+const Resume = (props) => 
       <div className="resume">
          <div className="nav">{/*GEOFF <span>WEB</span>B*/}</div>
          <div className="my-info">
@@ -24,36 +18,26 @@ class Resume extends Component {
          <div className="experience">
             <MyXP/>
          </div>
-            <Camp jobs={this.props.jobs}/>
-      </div>
-    );
-  }
-}
-
-class Camp extends Component {
-   render(){
-    return(
+            <Camp jobs={props.jobs}/>
+      </div>;
+    
+const Camp = (props) => 
       <div className="Center">
         <div className="Card">
           <h2></h2>
-          <img src={this.props.jobs[0].mlogo} className="Card-image" alt="logo" />
-          <h2>{this.props.jobs[0].name}</h2>
+          <img src={props.jobs[0].mlogo} className="Card-image" alt="logo" />
+          <h2>{props.jobs[0].name}</h2>
           <div className="Info-card">
-            <h3>{this.props.jobs[0].title}</h3>
+            <h3>{props.jobs[0].title}</h3>
             <div className="Info">
-              <p>{this.props.jobs[0].date}</p>
-              <p>{this.props.jobs[0].info}</p>
+              <p>{props.jobs[0].date}</p>
+              <p>{props.jobs[0].info}</p>
             </div>
           </div>
         </div>
-      </div>
-    );
-  }
-}
+      </div>;
 
-class MyInfo extends Component {
-   render(){
-    return(
+const MyInfo = (props) => 
       <div className="myInfo">
         <h2></h2>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>
@@ -72,14 +56,9 @@ class MyInfo extends Component {
             <p className="degree">Music Business & Marketing</p>
           <p className="bio">Apprentice software developer at Nashville Software School and marketing professional.</p>
         </div>
-      </div>
-    );
-  }
-}
+      </div>;
 
-class MyXP extends Component {
-   render(){
-    return(
+const MyXP = () =>
       <div className="myXP">
         <h1>Experience</h1>
         <div className="jobDiv">
@@ -109,9 +88,6 @@ class MyXP extends Component {
           </div>
 
         </div>
-      </div>
-    );
-  }
-}
+      </div>;
 
 export default Profile;

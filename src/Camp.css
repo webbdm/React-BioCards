@@ -1,171 +1,171 @@
 .Wrapper {
-  background-color: white;
+    background-color: white;
 }
 
-.Wrapper h1{
-
-
-}
+.Wrapper h1 {}
 
 .resume {
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-  text-align: center;
-  align-content: space-between;
-  background-color: #292727;
-  max-width: 1080px;
-  /*border: 3px solid black;*/
-  border-radius: 5px;
-  box-shadow: 7px 7px 5px #888888;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: space-between;
+    background-color: #292727;
+    max-width: 1080px;
+    /*border: 3px solid black;*/
+    border-radius: 5px;
+    box-shadow: 7px 7px 5px #888888;
 }
 
 .nav {
-  text-align: left;
-  font-size: 35px;
-  color: navy;
-  width: 100%;
-  height: 50px;
-  background-color: #3F7FBF;
-  flex-basis: 100%;
+    text-align: left;
+    font-size: 35px;
+    color: navy;
+    width: 100%;
+    height: 50px;
+    background-color: #3F7FBF;
+    flex-basis: 100%;
 }
 
 .nav span {
-  color: #292727;
+    color: #292727;
 }
 
 /* My Info */
 
 .myInfo {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  align-items: center;
-  width: 300px;
-  height: 500px;
-  text-align: center;
-  color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    color: white;
 }
 
 .myInfo img {
-  height: 170px;
-  width: 170px;
+    height: 170px;
+    width: 170px;
 }
 
 .myInfo h3 {
-  color: #3F7FBF;
+    color: #3F7FBF;
 }
 
 .infoDiv {
-  text-align: left;
-  max-width: 240px;
-  padding: 5px 10px;
-  background-color: #444040;
+    text-align: left;
+    max-width: 240px;
+    padding: 5px 10px;
+    background-color: #444040;
 }
 
 .infoDiv h4 {
-  margin: 7px 0px 7px 5px;
-  border-bottom: 2px solid #3F7FBF;
-  width: 78px;
+    margin: 7px 0px 7px 5px;
+    border-bottom: 2px solid #3F7FBF;
+    width: 78px;
 }
 
 .infoDiv p {
-  margin: 0px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
 }
 
 .infoDiv span {
-  font-size: 13px;
-  color: #292727;
+    font-size: 13px;
+    color: #292727;
 }
 
 .bio {
-  padding: 20px 0px 15px 0px;
+    padding: 20px 0px 15px 0px;
 }
 
 .degree {
-  font-size: 11px;
-  margin: 0px 0px 60px 0px;
+    font-size: 11px;
+    margin: 0px 0px 60px 0px;
 }
 
 .logoDiv {
-  margin: 5px 0 20px 0;
-  padding: 3px 0;
-  width: 170px;
-  border-top: 2px solid #3F7FBF;
-  border-bottom: 2px solid #3F7FBF;
+    margin: 5px 0 20px 0;
+    padding: 3px 0;
+    width: 170px;
+    border-top: 2px solid #3F7FBF;
+    border-bottom: 2px solid #3F7FBF;
 }
 
 .logoDiv img {
-  margin: 0px 5px;
-  height: 35px;
-  width: 35px;
+    margin: 0px 5px;
+    height: 35px;
+    width: 35px;
 }
 
+
 /* Experience */
-.myXP{
-  color: white;
+
+.myXP {
+    color: white;
 }
 
 .myXP h1 {
-  font-size: 25px;
-  text-align: left;
-  padding-left: 4px
+    font-size: 25px;
+    text-align: left;
+    padding-left: 4px
 }
 
 .jobDiv {
-  text-align: left;
+    text-align: left;
 }
 
 .jobDiv p {
-  margin: 2px;
+    margin: 2px;
 }
 
 .jobLine {
-  margin: 10px 0px 50px 0px;
+    margin: 10px 0px 50px 0px;
 }
 
 .jobLine h3 {
-  border-bottom: 10px solid #3F7FBF;
+    border-bottom: 10px solid #3F7FBF;
 }
 
 .jobLine p {
-  padding-left: 3px;
+    padding-left: 3px;
 }
+
 
 /* Job Card */
 
 .Card {
-  text-align: center;
-  background-color: #444040;
-  height: 510px;
-  width: 350px;
-  margin: 20px 20px 20px 60px;
-  /*border: 3px solid black;*/
-  /*box-shadow: 7px 7px 5px #888888;*/
-  color: white;
+    text-align: center;
+    background-color: #444040;
+    height: 510px;
+    width: 350px;
+    margin: 20px 20px 20px 60px;
+    /*border: 3px solid black;*/
+    /*box-shadow: 7px 7px 5px #888888;*/
+    color: white;
 }
 
-.Card h2, h3{
-  margin: 5px;
+.Card h2, h3 {
+    margin: 5px;
 }
 
 .Card-image {
-  height: 150px;
-  width: 180px;
-  margin: 10px 0px;
+    height: 150px;
+    width: 180px;
+    margin: 10px 0px;
 }
 
 .Info-card span {
-  color: white;
+    color: white;
 }
 
-.Info-card p{
-  /*border: 1px solid navy*/
-  height: 50px;
+.Info-card p {
+    /*border: 1px solid navy*/
+    height: 50px;
 }
 
-.Info{
-  /*border: 1px solid black*/
-  border-radius: 12px;
-  text-align: center;
+.Info {
+    /*border: 1px solid black*/
+    border-radius: 12px;
+    text-align: center;
 }

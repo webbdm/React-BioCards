@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 //import logo from './logo.svg';
 import './Camp.css';
 // import './Camp.js';
 
 const Profile = (props) =>
-   
+
       <div className="Wrapper">
         <Resume jobs={props.jobs}/>
       </div>;
 
-const Resume = (props) => 
+const Resume = (props) =>
       <div className="resume">
          <div className="nav">{/*GEOFF <span>WEB</span>B*/}</div>
          <div className="my-info">
@@ -20,8 +20,8 @@ const Resume = (props) =>
          </div>
             <Camp jobs={props.jobs}/>
       </div>;
-    
-const Camp = (props) => 
+
+const Camp = (props) =>
       <div className="Center">
         <div className="Card">
           <h2></h2>
@@ -37,7 +37,7 @@ const Camp = (props) =>
         </div>
       </div>;
 
-const MyInfo = (props) => 
+const MyInfo = (props) =>
       <div className="myInfo">
         <h2></h2>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>

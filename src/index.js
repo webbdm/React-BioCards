@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Camp from './Camp';
+import Profile from './Profile.js';
 import './index.css';
 
 var JOBS = [
-
   {
     name: "Rockhouse Partners",
     title: "Marketing Intern",
@@ -28,11 +27,7 @@ var JOBS = [
     info:"Social Media",
     mlogo: "images/RHP.png"
   }
-
 ];
 
-
 ReactDOM.render(
-  <Camp jobs={JOBS}/>,
-document.getElementById('root')
-);
+    <Profile jobs={JOBS}/>, document.getElementById('root'));

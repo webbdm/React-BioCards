@@ -15,10 +15,15 @@ class Resume extends React.Component {
       this.state = {
         index: 0
       };
+
+      this.currentJob = this.currentJob.bind(this);
+      this.jobTwo = this.jobTwo.bind(this);
+      this.jobThree = this.jobThree.bind(this);
+      this.jobFour = this.jobFour.bind(this);
     }
 
     currentJob() {
-      console.log('test');
+      console.log(this.state.index);
       this.setState({
         index: 0
       })
@@ -50,9 +55,9 @@ class Resume extends React.Component {
               <MyInfo/>
            </div>
            <div className="experience">
-              <MyXP func={this.currentJob}/>
+              <MyXP func={this.jobTwo}/>
            </div>
-              <Camp jobs={this.props.jobs}/>
+              <Camp index={this.state.index} jobs={this.props.jobs}/>
         </div>
       );
    }
@@ -60,15 +65,15 @@ class Resume extends React.Component {
 
 const Camp = (props) =>
       <div className="Center">
-        <div className="Card">
+        <div className="Card" onClick={function(){console.log(props.index);}}>
           <h2></h2>
-          <img src={props.jobs[0].mlogo} className="Card-image" alt="logo" />
-          <h2>{props.jobs[0].name}</h2>
+          <img src={props.jobs[props.index].mlogo} className="Card-image" alt="logo" />
+          <h2>{props.jobs[props.index].name}</h2>
           <div className="Info-card">
-            <h3>{props.jobs[0].title}</h3>
+            <h3>{props.jobs[props.index].title}</h3>
             <div className="Info">
-              <p>{props.jobs[0].date}</p>
-              <p>{props.jobs[0].info}</p>
+              <p>{props.jobs[props.index].date}</p>
+              <p>{props.jobs[props.index].info}</p>
             </div>
           </div>
         </div>
@@ -100,13 +105,13 @@ const MyXP = (props) =>
         <h1>Experience</h1>
         <div className="jobDiv">
 
-          <div className="jobLine" onClick={props.func}>
+          <div className="jobLine">
             <h3>Gilbert McLaughlin Casella Architects</h3>
             <p>Marketing Coordinator</p>
             <p>Feb. 2015 - Present</p>
           </div>
 
-          <div className="jobLine">
+          <div className="jobLine" onClick={props.func}>
             <h3>Crowd Surf</h3>
             <p>Marketing Intern</p>
             <p>Fall 2014</p>

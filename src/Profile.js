@@ -100,6 +100,13 @@ const MyInfo = (props) =>
         </div>
       </div>;
 
+const JobLine = (props) =>
+      <div className="jobLine" onClick={props.click}>
+        <h3>{props.job[3].name}</h3>
+        <p>{props.job[3].title}</p>
+        <p>{props.job[3].date}</p>
+      </div>;
+
 const MyXP = (props) =>
       <div className="myXP">
         <h1>Experience</h1>
@@ -123,11 +130,13 @@ const MyXP = (props) =>
             <p>Summer 2014</p>
           </div>
 
-          <div className="jobLine">
+          <JobLine job={props.jobs} click={props.func} />
+
+          {/*<div className="jobLine">
             <h3>Rockhouse Partners</h3>
             <p>Marketing Intern</p>
             <p>Spring 2014</p>
-          </div>
+          </div>*/}
 
         </div>
       </div>;

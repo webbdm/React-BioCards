@@ -55,7 +55,7 @@ class Resume extends React.Component {
               <MyInfo/>
            </div>
            <div className="experience">
-              <MyXP func={this.jobTwo}/>
+              <MyXP jobs={this.props.jobs} func={this.jobTwo}/>
            </div>
               <Camp index={this.state.index} jobs={this.props.jobs}/>
         </div>

@@ -16,33 +16,12 @@ class Resume extends React.Component {
         index: 0
       };
 
-      this.currentJob = this.currentJob.bind(this);
-      this.jobTwo = this.jobTwo.bind(this);
-      this.jobThree = this.jobThree.bind(this);
-      this.jobFour = this.jobFour.bind(this);
+      this.jobClick = this.jobClick.bind(this);
     }
 
-    currentJob() {
-      this.setState({
-        index: 0
-      })
-    }
-
-    jobTwo(jobIndex) {
+    jobClick(jobIndex) {
       this.setState({
         index: jobIndex
-      })
-    }
-
-    jobThree() {
-      this.setState({
-        index: 2
-      })
-    }
-
-    jobFour() {
-      this.setState({
-        index: 3
       })
     }
 
@@ -54,7 +33,7 @@ class Resume extends React.Component {
               <MyInfo/>
            </div>
            <div className="experience">
-              <MyXP jobs={this.props.jobs} func={this.jobTwo}/>
+              <MyXP jobs={this.props.jobs} func={this.jobClick}/>
            </div>
               <Camp index={this.state.index} jobs={this.props.jobs}/>
         </div>
@@ -116,10 +95,7 @@ const MyXP = (props) =>
                 jobz={props.jobs}
                 I={jobIndex}
                 key={jobIndex}
-                click={function(){
-                    props.func(jobIndex)
-                  }
-                }/>
+                click={function(){props.func(jobIndex)}}/>
              );
           })}
         </div>

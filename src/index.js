@@ -5,7 +5,7 @@ import './index.css';
 
 var JOBS = [
   {
-    name: "GMCA",
+    name: "Gilbert McLaughlin Casella Architects",
     title: "Marketing Coordinator",
     date: "Jan. 2015 - present",
     info:"Marketing",

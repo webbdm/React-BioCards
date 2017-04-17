@@ -101,43 +101,23 @@ const MyInfo = (props) =>
       </div>;
 
 const JobLine = (props) =>
-      <div className="jobLine" onClick={props.click}>
-        <h3>{props.job[3].name}</h3>
-        <p>{props.job[3].title}</p>
-        <p>{props.job[3].date}</p>
+      <div className="jobLine">
+        <h3>{props.jobz[props.I].name}</h3>
+        <p>{props.jobz[props.I].title}</p>
+        <p>{props.jobz[props.I].date}</p>
+        {console.log(props)}
       </div>;
 
 const MyXP = (props) =>
       <div className="myXP">
         <h1>Experience</h1>
         <div className="jobDiv">
-
-          <div className="jobLine">
-            <h3>Gilbert McLaughlin Casella Architects</h3>
-            <p>Marketing Coordinator</p>
-            <p>Feb. 2015 - Present</p>
-          </div>
-
-          <div className="jobLine" onClick={props.func}>
-            <h3>Crowd Surf</h3>
-            <p>Marketing Intern</p>
-            <p>Fall 2014</p>
-          </div>
-
-          <div className="jobLine">
-            <h3>MCN Interactive</h3>
-            <p>Marketing Intern</p>
-            <p>Summer 2014</p>
-          </div>
-
-          <JobLine job={props.jobs} click={props.func} />
-
-          {/*<div className="jobLine">
-            <h3>Rockhouse Partners</h3>
-            <p>Marketing Intern</p>
-            <p>Spring 2014</p>
-          </div>*/}
-
+          {props.jobs.map(function(currentJob,index){
+            console.log(currentJob)
+             return(
+              <JobLine jobz={props.jobs} I={index} click={props.func}/>
+             );
+          })}
         </div>
       </div>;
 

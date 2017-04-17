@@ -23,14 +23,14 @@ var JOBS = [
     title: "Marketing Intern",
     date: "May - August 2014",
     info: "Web & Content",
-    mlogo: "images/RHP.png"
+    mlogo: "http://www.bombplates.com/sites/www.bombplates.com/files/mcn_logo_0.png"
   },
   {
     name: "Rockhouse Partners",
     title: "Marketing Intern",
     date: "Jan - May 2014",
     info: "Assisted the marketing team with content, social media, and email marketing.",
-    mlogo: "http://rockhouse.wpengine.com/wp-content/uploads/2015/01/RHP_logo_three-colorr.png"
+    mlogo: "https://pbs.twimg.com/profile_images/492696167029805056/zDzX2quM.jpeg"
   }
 ];
 

@@ -23,15 +23,14 @@ class Resume extends React.Component {
     }
 
     currentJob() {
-      console.log(this.state.index);
       this.setState({
         index: 0
       })
     }
 
-    jobTwo() {
+    jobTwo(jobIndex) {
       this.setState({
-        index: 1
+        index: jobIndex
       })
     }
 
@@ -65,7 +64,7 @@ class Resume extends React.Component {
 
 const Camp = (props) =>
       <div className="Center">
-        <div className="Card" onClick={function(){console.log(props.index);}}>
+        <div className="Card">
           <h2></h2>
           <img src={props.jobs[props.index].mlogo} className="Card-image" alt="logo" />
           <h2>{props.jobs[props.index].name}</h2>
@@ -101,21 +100,26 @@ const MyInfo = (props) =>
       </div>;
 
 const JobLine = (props) =>
-      <div className="jobLine">
+      <div className="jobLine" onClick={props.click}>
         <h3>{props.jobz[props.I].name}</h3>
         <p>{props.jobz[props.I].title}</p>
         <p>{props.jobz[props.I].date}</p>
-        {console.log(props)}
       </div>;
 
 const MyXP = (props) =>
       <div className="myXP">
         <h1>Experience</h1>
         <div className="jobDiv">
-          {props.jobs.map(function(currentJob,index){
-            console.log(currentJob)
+          {props.jobs.map(function(currentJob,jobIndex){
              return(
-              <JobLine jobz={props.jobs} I={index} click={props.func}/>
+              <JobLine
+                jobz={props.jobs}
+                I={jobIndex}
+                key={jobIndex}
+                click={function(){
+                    props.func(jobIndex)
+                  }
+                }/>
              );
           })}
         </div>

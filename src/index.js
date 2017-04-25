@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Profile from './Profile.js';
 import './index.css';
 
-var JOBS = [
+const JOBS = [
   {
     name: "Gilbert McLaughlin Casella Architects",
     title: "Marketing Coordinator",

@@ -9,29 +9,49 @@ const Profile = (props) =>
         <Resume jobs={props.jobs}/>
       </div>;
 
-const Resume = (props) =>
-      <div className="resume">
-         <div className="nav">{/*GEOFF <span>WEB</span>B*/}</div>
-         <div className="my-info">
-            <MyInfo/>
-         </div>
-         <div className="experience">
-            <MyXP/>
-         </div>
-            <Camp jobs={props.jobs}/>
-      </div>;
+class Resume extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        index: 0
+      };
+
+      this.jobClick = this.jobClick.bind(this);
+    }
+
+    jobClick(jobIndex) {
+      this.setState({
+        index: jobIndex
+      })
+    }
+
+    render(){
+      return(
+        <div className="resume">
+           <div className="nav">{/*GEOFF <span>WEB</span>B*/}</div>
+           <div className="my-info">
+              <MyInfo/>
+           </div>
+           <div className="experience">
+              <MyXP jobs={this.props.jobs} func={this.jobClick}/>
+           </div>
+              <Camp index={this.state.index} jobs={this.props.jobs}/>
+        </div>
+      );
+   }
+}
 
 const Camp = (props) =>
       <div className="Center">
         <div className="Card">
           <h2></h2>
-          <img src={props.jobs[0].mlogo} className="Card-image" alt="logo" />
-          <h2>{props.jobs[0].name}</h2>
+          <img src={props.jobs[props.index].mlogo} className="Card-image" alt="logo" />
+          <h2>{props.jobs[props.index].name}</h2>
           <div className="Info-card">
-            <h3>{props.jobs[0].title}</h3>
+            <h3>{props.jobs[props.index].title}</h3>
             <div className="Info">
-              <p>{props.jobs[0].date}</p>
-              <p>{props.jobs[0].info}</p>
+              <p>{props.jobs[props.index].date}</p>
+              <p>{props.jobs[props.index].info}</p>
             </div>
           </div>
         </div>
@@ -43,7 +63,7 @@ const MyInfo = (props) =>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>
         <h3></h3>
         <div className="logoDiv">
-          <img src="https://angular.io/resources/images/logos/angular2/angular.svg" alt="Angular"/>
+          <img src="https://angular.io/resources/images/logos/angular/angular.png" alt="Angular"/>
           <img src="http://tomwayson.github.io/mwd-jsapi/img/react-logo.png" alt="React"/>
           <img src="https://dt-cdn.net/assets/images/gfx/icons/tech/dotnetmicrosoft-536938fee2.svg" alt=".NET"/>
         </div>
@@ -58,35 +78,26 @@ const MyInfo = (props) =>
         </div>
       </div>;
 
-const MyXP = () =>
+const JobLine = (props) =>
+      <div className="jobLine" onClick={props.click}>
+        <h3>{props.jobz[props.I].name}</h3>
+        <p>{props.jobz[props.I].title}</p>
+        <p>{props.jobz[props.I].date}</p>
+      </div>;
+
+const MyXP = (props) =>
       <div className="myXP">
         <h1>Experience</h1>
         <div className="jobDiv">
-
-          <div className="jobLine">
-            <h3>Gilbert McLaughlin Casella Architects</h3>
-            <p>Marketing Coordinator</p>
-            <p>Feb. 2015 - Present</p>
-          </div>
-
-          <div className="jobLine">
-            <h3>Crowd Surf</h3>
-            <p>Marketing Intern</p>
-            <p>Fall 2014</p>
-          </div>
-
-          <div className="jobLine">
-            <h3>MCN Interactive</h3>
-            <p>Marketing Intern</p>
-            <p>Summer 2014</p>
-          </div>
-
-          <div className="jobLine">
-            <h3>Rockhouse Partners</h3>
-            <p>Marketing Intern</p>
-            <p>Spring 2014</p>
-          </div>
-
+          {props.jobs.map(function(currentJob,jobIndex){
+             return(
+              <JobLine
+                jobz={props.jobs}
+                I={jobIndex}
+                key={jobIndex}
+                click={function(){props.func(jobIndex)}}/>
+             );
+          })}
         </div>
       </div>;
 

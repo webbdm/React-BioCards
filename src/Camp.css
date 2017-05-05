@@ -131,6 +131,11 @@
     padding-left: 3px;
 }
 
+.jobLine:hover{
+    background-color: #444040;
+    border-radius: 5px;
+}
+
 
 /* Job Card */
 
@@ -151,7 +156,7 @@
 
 .Card-image {
     height: 150px;
-    width: 180px;
+    width: 150px;
     margin: 10px 0px;
 }
 

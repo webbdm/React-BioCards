@@ -6,7 +6,7 @@ import './Camp.css';
 const Profile = (props) =>
 
       <div className="Wrapper">
-        <Resume jobs={props.jobs}/>
+        <Resume jobs={props.jobs} bio={props.bio}/>
       </div>;
 
 class Resume extends React.Component {
@@ -42,7 +42,6 @@ class Resume extends React.Component {
 }
 
 const Camp = (props) =>
-      <div className="Center">
         <div className="Card">
           <h2></h2>
           <img src={props.jobs[props.index].mlogo} className="Card-image" alt="logo" />
@@ -54,8 +53,7 @@ const Camp = (props) =>
               <p>{props.jobs[props.index].info}</p>
             </div>
           </div>
-        </div>
-      </div>;
+        </div>;
 
 const MyInfo = (props) =>
       <div className="myInfo">

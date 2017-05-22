@@ -34,5 +34,21 @@ const JOBS = [
   }
 ];
 
+const MYBIO = {
+    name: "Geoff Webb",
+    education: [{
+        school_name: "Belmont University",
+        major: "Music Business",
+        minor: "Marketing",
+        grad_date: 2014
+    }, {
+        school_name: "Nashville Software School",
+        major: "Front End & C# / .NET",
+        minor: "",
+        grad_date: 2017
+    }],
+    bio: "Apprentice software developer at Nashville Software School and marketing professional."
+};
+
 ReactDOM.render(
-    <Profile jobs={JOBS}/>, document.getElementById('root'));
+    <Profile jobs={JOBS} bio={MYBIO}/>, document.getElementById('root'));

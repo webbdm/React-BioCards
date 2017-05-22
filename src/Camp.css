@@ -1,5 +1,10 @@
+.root{
+
+}
+
 .Wrapper {
-    background-color: white;
+    background-color: yellow;
+    width: 100%;
 }
 
 .Wrapper h1 {}
@@ -9,9 +14,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    align-content: space-between;
+    justify-content: space-around;
     background-color: #292727;
-    max-width: 1080px;
+    width: 100%;
     /*border: 3px solid black;*/
     border-radius: 5px;
     box-shadow: 7px 7px 5px #888888;
@@ -45,7 +50,7 @@
 }
 
 .myInfo img {
-    height: 170px;
+    height: 173px;
     width: 170px;
 }
 
@@ -121,6 +126,7 @@
 
 .jobLine {
     margin: 10px 0px 50px 0px;
+    cursor: pointer;
 }
 
 .jobLine h3 {
@@ -144,7 +150,7 @@
     background-color: #444040;
     height: 510px;
     width: 350px;
-    margin: 20px 20px 20px 60px;
+    margin: 20px 0px 20px 0px;
     /*border: 3px solid black;*/
     /*box-shadow: 7px 7px 5px #888888;*/
     color: white;

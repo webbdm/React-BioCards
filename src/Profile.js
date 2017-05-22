@@ -1,5 +1,5 @@
 import React from 'react';
-//import logo from './logo.svg';
+//import axios from 'axios';
 import './Camp.css';
 // import './Camp.js';
 
@@ -25,12 +25,23 @@ class Resume extends React.Component {
       })
     }
 
+    // componentDidMount () {
+    //   axios.get(`https://teamtreehouse.com/geoffwebb.json`)
+    //     .then((response) => {
+    //       console.log('response', response.data)
+    //     })
+    //     .catch((error) => {
+    //       console.error('axios error', error)
+    //     })
+    // }
+
     render(){
       return(
         <div className="resume">
            <div className="nav">{/*GEOFF <span>WEB</span>B*/}</div>
            <div className="my-info">
-              <MyInfo/>
+
+              <MyInfo bio={this.props.bio}/>
            </div>
            <div className="experience">
               <MyXP jobs={this.props.jobs} func={this.jobClick}/>
@@ -68,10 +79,10 @@ const MyInfo = (props) =>
 
         <div className="infoDiv">
           <h4>Education</h4>
-          <p>Nashville Software School    <span>  2017</span></p>
-            <p className="degree">Front End & C# / .NET</p>
-          <p>Belmont University   <span> 2014</span></p>
-            <p className="degree">Music Business & Marketing</p>
+          <p>{props.bio.education[1].school_name}    <span>  {props.bio.education[1].grad_date}</span></p>
+            <p className="degree">{props.bio.education[1].major}</p>
+          <p>{props.bio.education[0].school_name}   <span> {props.bio.education[0].grad_date}</span></p>
+            <p className="degree">{props.bio.education[0].major} & {props.bio.education[0].minor}</p>
           <p className="bio">Apprentice software developer at Nashville Software School and marketing professional.</p>
         </div>
       </div>;

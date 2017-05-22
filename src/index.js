@@ -47,7 +47,7 @@ const MYBIO = {
         minor: "",
         grad_date: 2017
     }],
-    bio: "Bio goes here"
+    bio: "Apprentice software developer at Nashville Software School and marketing professional."
 };
 
 ReactDOM.render(

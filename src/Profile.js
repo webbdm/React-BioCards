@@ -72,7 +72,7 @@ const MyInfo = (props) =>
         <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff"/>
         <h3></h3>
         <div className="logoDiv">
-          <img src="https://angular.io/resources/images/logos/angular/angular.png" alt="Angular"/>
+          <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular"/>
           <img src="http://tomwayson.github.io/mwd-jsapi/img/react-logo.png" alt="React"/>
           <img src="https://dt-cdn.net/assets/images/gfx/icons/tech/dotnetmicrosoft-536938fee2.svg" alt=".NET"/>
         </div>

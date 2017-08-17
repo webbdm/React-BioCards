@@ -96,7 +96,7 @@ const JobLine = (props) =>
 
 const MyXP = (props) =>
       <div className="myXP">
-        <h1>Experience</h1>
+        <h1 class="experience-header">Experience</h1>
         <div className="jobDiv">
           {props.jobs.map(function(currentJob,jobIndex){
              return(

@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Profile from './Profile.js';
+//import Profile from './Profile.js';
 import HomePage from './HomePage.js';
 import './index.css';
-import bioData from './data/bio.json';
-
-console.log(bioData);
+//import bioData from './data/bio.json';
 
 const JOBS = [
   {
@@ -55,5 +53,5 @@ const MYBIO = {
 };
 
 ReactDOM.render(
-    <Profile jobs={JOBS} bio={MYBIO}/>, document.getElementById('root')
+    <HomePage j={JOBS} b={MYBIO}/>, document.getElementById('root')
   );

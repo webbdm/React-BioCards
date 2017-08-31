@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 //import Profile from './Profile.js';
 import HomePage from './HomePage.js';
 import './index.css';
-import bioData from './data/bio.json';
+//import bioData from './data/bio.json';
 
 const JOBS = [
   {

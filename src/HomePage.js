@@ -1,9 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route, Link } from 'react-router-dom';
 //import axios from 'axios';
 import './Camp.css';
 import Profile from './Profile.js';
 // import './Camp.js';
+
+// Components
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -15,20 +20,23 @@ class HomePage extends React.Component {
 
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div className="hompage-wrapper">
                     <nav>
                         <ul>
-                            <li className="sides"><Link to='/'>Home</Link></li>
+                            <li className="sides"><Link to='/projects'>Projects</Link></li>
                             <li className="sides"><Link to='/resume'>Resume</Link></li>
-                            <li><img alt="Logo" src="https://raw.githubusercontent.com/nss-evening-cohort-05/challenge-static-web-html-webbdm/master/images/mylogo3.png" /></li>
-                            <li className="sides"><a href="#">About</a></li>
-                            <li className="sides"><a href="#">Work</a></li>
+                            <li><Link to='/'><img alt="Logo" src="https://raw.githubusercontent.com/nss-evening-cohort-05/challenge-static-web-html-webbdm/master/images/mylogo3.png" /></Link></li>
+                            <li className="sides"><Link to='/about'>About</Link></li>
+                            <li className="sides"><Link to='/contact'>Contact</Link></li>
                         </ul>
                     </nav>
 
                     <div className="">
                         <Route exact path="/resume" component={() => (<Profile jobs={this.props.j} bio={this.props.b} />)} />
+                        <Route exact path="/projects" component={() => (<Projects />)} />
+                        <Route exact path="/about" component={() => (<About />)} />
+                        <Route exact path="/contact" component={() => (<Contact />)} />
                         {/* <Profile jobs={this.props.j} bio={this.props.b} /> */}
                     </div>
 
@@ -43,7 +51,7 @@ class HomePage extends React.Component {
                         </div>
                     </footer>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }

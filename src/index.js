@@ -10,7 +10,7 @@ const JOBS = [
     name: "Gilbert McLaughlin Casella Architects",
     title: "Marketing Coordinator",
     date: "Jan. 2015 - present",
-    info:"Marketing",
+    info:"I handle marketing for the firm, which includes graphic design, social media, and management/development of the website. The site utilizes jQuery & jQuery Animations, and the Google Maps API",
     mlogo: "https://pbs.twimg.com/profile_images/675375907058659328/f06dENlG.jpg"
   },
   {

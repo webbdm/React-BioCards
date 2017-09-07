@@ -5,6 +5,11 @@ import './Camp.css';
 import Profile from './Profile.js';
 // import './Camp.js';
 
+// Components
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
+
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
@@ -29,6 +34,9 @@ class HomePage extends React.Component {
 
                     <div className="">
                         <Route exact path="/resume" component={() => (<Profile jobs={this.props.j} bio={this.props.b} />)} />
+                        <Route exact path="/projects" component={() => (<Projects />)} />
+                        <Route exact path="/about" component={() => (<About />)} />
+                        <Route exact path="/contact" component={() => (<Contact />)} />
                         {/* <Profile jobs={this.props.j} bio={this.props.b} /> */}
                     </div>
 

@@ -107,8 +107,36 @@ body {
     
   }
 
+/* Projects */
+.projects-wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    margin-bottom: 5%;
+}
+
+.projects-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.project-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-item img{
+    align-self: left;
+    margin: 70px;
+}
+
+.project-item p{
+    align-self: right;
+    margin: 70px;
+}
 
 
 /* Resume */
@@ -310,4 +338,66 @@ body {
     /*border: 1px solid black*/
     border-radius: 12px;
     text-align: center;
+}
+
+/* About */
+
+.about-wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    margin-bottom: 5%;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-item img{
+    align-self: left;
+    margin: 70px;
+}
+
+.about-item p{
+    align-self: right;
+    margin: 70px;
+}
+
+/* Contact */
+.contact-wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    margin-bottom: 5%;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-item img{
+    align-self: left;
+    margin: 70px;
+}
+
+.contact-item p{
+    align-self: right;
+    margin: 70px;
 }

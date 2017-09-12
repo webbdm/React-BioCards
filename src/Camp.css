@@ -355,32 +355,30 @@ body {
 /* About */
 
 .about-wrapper{
-    margin: 0 auto;
     max-width: 1100px;
-    margin-bottom: 5%;
+    margin: 5% 0;
+    display: grid;
+    /* grid-template-columns: 150px 150px;  */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 300px; 
+    justify-content: center;
+    grid-gap: 120px;
+    padding: 0px 100px;
 }
 
-.about-box{
+
+.about-img{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    /* grid-column: 1 / 2; 
+    grid-row:  1 / 1; */
 }
 
-.about-item{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.about-item img{
-    align-self: left;
-    margin: 70px;
-}
-
-.about-item p{
-    align-self: right;
-    margin: 70px;
+.about-wrapper p{
+    margin: 10px;
+    /* grid-column: 2 / 2; /* grid-column-start: 5; 
+    grid-row:  1 /1; */
 }
 
 /* Contact */

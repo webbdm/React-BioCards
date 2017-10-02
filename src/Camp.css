@@ -83,6 +83,28 @@ body {
     margin: 5px 15px;
     
   }
+
+  .f-links span{
+    color: white;
+    font-family: roboto;
+  }
+
+  .footer-right{
+      float: right;
+      margin: 5px 15px;
+  }
+
+  .footer-right>*{
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+  }
+
+  .footer-right img{
+      margin-left: 15px;
+      height: 40px;
+      width: auto;
+  }
   
   
   /*////// Media Queries //////*/
@@ -110,15 +132,16 @@ body {
 /* Projects */
 .projects-wrapper{
     margin: 0 auto;
-    max-width: 1100px;
-    margin-bottom: 5%;
+    max-width: 1300px;
+    margin-top: 7%;
     text-align: center;
 }
 
 .projects-box{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -129,27 +152,40 @@ body {
 
 .project-item{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 300px;
+    width: 400px;
 }
 
 .project-item img{
-    height: 300px;
-    width: auto;
-    align-self: left;
-    margin: 70px;
+    flex-grow: 1;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
     border: 2px solid black;
     border-radius: 3px;
 }
 
 .project-item p{
+    flex-grow: 1;
+    font-size: 14px;
     color: white;
-    align-self: right;
-    margin: 70px;
     width: 300px;
-    text-align: left;
+    text-align: justify;
 }
 
+/* .trek-img{
+    background: url('https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Trek%20Screenshot.png')  no-repeat;
+}
+
+.macro-img{
+    background: url('https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Macro%20Screenshot.png')  no-repeat;
+}
+
+.til-img{
+    background: url('https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/TIL%20Screenshot.png')  no-repeat;
+} */
 
 /* Resume */
 
@@ -366,7 +402,6 @@ body {
     padding: 0px 100px;
 }
 
-
 .about-img{
     display: flex;
     justify-content: space-around;
@@ -374,6 +409,9 @@ body {
     grid-row:  1 / 1; */
 }
 
+.about-img img{
+    border-radius: 4px;
+}
 
 .about-wrapper p{
     margin: 10px;

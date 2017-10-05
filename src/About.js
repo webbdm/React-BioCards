@@ -5,6 +5,7 @@ const About = ({ }) =>
     <div className="about-wrapper">
         <div className="about-img">
             <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="About" />
+            {/* <h4>Geoff Webb</h4> */}
         </div>
 
         <div className="about-info">

@@ -4,7 +4,7 @@ import './Camp.css';
 const ProjectView = ({ name, description, imgUrl, prjUrl }) =>
     <div className="project-view-wrapper">
         <div className="project-view-image">
-            <a href=""><img src={imgUrl} alt="name" /></a>
+            <a href={prjUrl}><img src={imgUrl} alt="name" /></a>
         </div>
 
         <div className="project-view-info">

@@ -11,6 +11,7 @@ import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
 import ProjectView from './ProjectView';
+import Banner from './Banner';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ class HomePage extends React.Component {
                         <ul>
                             <li className="sides"><Link to='/projects'>Projects</Link></li>
                             <li className="sides"><Link to='/resume'>Resume</Link></li>
-                            <li><Link to='/'><img alt="Logo" src="https://raw.githubusercontent.com/nss-evening-cohort-05/challenge-static-web-html-webbdm/master/images/mylogo3.png" /></Link></li>
+                            <li><Link to='/'><img alt="Logo" src="https://raw.githubusercontent.com/webbdm/React-BioCards/master/images/GWebb%20Logo%20Alt.png" /></Link></li>
                             <li className="sides"><Link to='/about'>About</Link></li>
                             <li className="sides"><Link to='/contact'>Contact</Link></li>
                         </ul>
@@ -39,6 +40,7 @@ class HomePage extends React.Component {
                     </div> */}
 
                     <div className="routes">
+                        <Route exact path="/" component={() => (<Banner/>)} />
                         <Route exact path="/resume" component={() => (<Profile jobs={this.props.j} bio={this.props.b} />)} />
                         <Route exact path="/projects" component={() => (<Projects />)} />
                         <Route exact path="/about" component={() => (<About />)} />

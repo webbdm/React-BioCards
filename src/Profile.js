@@ -69,7 +69,7 @@ const Camp = (props) =>
 
 const MyInfo = (props) =>
   <div className="myInfo">
-    <h2></h2>
+    <h2>Geoff Webb</h2>
     <img src="https://media.licdn.com/media/p/2/005/02a/1c1/0e167c8.jpg" alt="Geoff" />
     <h3></h3>
     <div className="logoDiv">
@@ -84,7 +84,7 @@ const MyInfo = (props) =>
       <p className="degree">{props.bio.education[1].major}</p>
       <p>{props.bio.education[0].school_name}   <span> {props.bio.education[0].grad_date}</span></p>
       <p className="degree">{props.bio.education[0].major} & {props.bio.education[0].minor}</p>
-      <p className="bio">Apprentice software developer at Nashville Software School and marketing professional.</p>
+      <p className="bio">Visually-minded software developer with a passion for solving puzzles</p>
     </div>
   </div>;
 

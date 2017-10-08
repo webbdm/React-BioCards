@@ -15,7 +15,7 @@ const Projects = ({ }) =>
 
             {/* <h2>Macro Tracker</h2> */}
             <div className="project-item macro-img">
-                <Link to="/MacroTracker"><img src="https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Macro%20Screenshot.png" alt="Macro" /></Link>
+                <Link to="/MacroTracker"><img src="https://raw.githubusercontent.com/webbdm/React-BioCards/master/images/Macro%20Graphs.png" alt="Macro" /></Link>
                 {/* <a href="https://island-hopper.firebaseapp.com/"><img src="https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Macro%20Screenshot.png" alt="Macro" /></a> */}
             </div>
 

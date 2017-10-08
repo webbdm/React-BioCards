@@ -8,30 +8,30 @@ import './index.css';
 const JOBS = [
   {
     name: "Gilbert McLaughlin Casella Architects",
-    title: "Marketing Coordinator",
-    date: "Jan. 2015 - present",
+    title: "Marketing & Office Coordinator",
+    date: "January 2015 - present",
     info:"I handle marketing for the firm, which includes graphic design, social media, and management/development of the website. The site utilizes jQuery & jQuery Animations, and the Google Maps API",
     mlogo: "https://pbs.twimg.com/profile_images/675375907058659328/f06dENlG.jpg"
   },
   {
     name: "Crowd Surf",
-    title: "Social Media Marketing Intern",
-    date: "August - Dec. 2014",
-    info:"Social Media",
+    title: "Intern",
+    date: "August - December 2014",
+    info:"Managed websites, social media, content, and various marketing campaigns for artists & their record labels, agents, and management representatives.",
     mlogo: "https://pbs.twimg.com/profile_images/542382356191916032/a8xiW2r1.jpeg"
   },
   {
     name: "MCN Interactive",
-    title: "Marketing Intern",
+    title: "Intern",
     date: "May - August 2014",
-    info: "Web & Content",
+    info: "Assisted with website management, graphic design, and marketing operations of MCN Interactive’s brands & subsidiaries which included Bombplates.com, MerchMo, FutureShirts, and their various eCommerce assets.",
     mlogo: "http://www.bombplates.com/sites/www.bombplates.com/files/mcn_logo_0.png"
   },
   {
     name: "Rockhouse Partners",
-    title: "Marketing Intern",
-    date: "Jan - May 2014",
-    info: "Assisted the marketing team with content, social media, and email marketing.",
+    title: "Intern",
+    date: "January - May 2014",
+    info: "Assisted with the management, development, and content of client WordPress websites. Also tasked with client & agency marketing operations which included social media & email marketing.",
     mlogo: "https://pbs.twimg.com/profile_images/492696167029805056/zDzX2quM.jpeg"
   }
 ];
@@ -49,7 +49,7 @@ const MYBIO = {
         minor: "",
         grad_date: 2017
     }],
-    bio: "Apprentice software developer at Nashville Software School and marketing professional."
+    bio: "Visually-minded software developer with a passion for solving puzzles"
 };
 
 ReactDOM.render(

@@ -9,7 +9,7 @@ const Projects = ({ }) =>
 
             {/* <h2>Trek</h2> */}
             <div className="project-item trek-img">
-                <Link to="/Trek"><img src="https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Trek%20Screenshot.png" alt="Macro" /></Link>
+                <Link to="/Trek"><img src="https://raw.githubusercontent.com/webbdm/React-BioCards/master/images/Screen%20Shot%202017-10-25%20at%2011.25.45%20PM.png" alt="Macro" /></Link>
                 {/* <a><img src="https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Trek%20Screenshot.png" alt="Trek" /></a> */}
             </div>
 

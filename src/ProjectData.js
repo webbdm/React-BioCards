@@ -2,11 +2,11 @@ export const projectData = {
     "projects": [{
         "name": "Trek",
         "description": "Trek was my Front-End capstone for Nashville Software School, and the first full-fledged web application I ever built. The inspiration for this wiki-style campsite & park database was my love of backpacking. Sometimes it’s hard to find locations & reviews for very specific campsites, especially if they are in the backcountry. Trek allows you to search for campsites by park, and add photos, comments, reviews, and coordinates to display the exact location with Google Maps. It was built with Angular 1.6, the Google Maps Javascript API, and Firebase.",
-        "img_url": "https://raw.githubusercontent.com/webbdm/React-BioCards/nav-routes/images/Trek%20Screenshot.png",
-        "url": ""
+        "img_url": "https://raw.githubusercontent.com/webbdm/React-BioCards/master/images/Screen%20Shot%202017-10-25%20at%2011.25.45%20PM.png",
+        "url": "https://trekbase-dc9a5.firebaseapp.com"
     }, {
         "name": "Macro Tracker",
-        "description": "The “Macro Tracker” is a tool i’m currently building & working on every week. One of the most important parts of maintaining a workout & fitness plan is to track your nutrition & macros. I built this application with React & Firebase I’m currently working on a feature that allows you to log each day and view your weekly stats and graphs. Check back every week for updates!",
+        "description": "The “Macro Tracker” is a tool i’m currently building & working on every week. One of the most important parts of maintaining a workout & fitness plan is to track your nutrition & macros. I built this application with React & Firebase and I’m currently working on a feature that allows you to log each day and view your weekly stats and graphs. Check back every week for updates!",
         "img_url": "https://raw.githubusercontent.com/webbdm/React-BioCards/master/images/Macro%20Graphs.png",
         "url": "https://island-hopper.firebaseapp.com/"
     }, {

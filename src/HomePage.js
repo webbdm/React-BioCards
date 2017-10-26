@@ -12,6 +12,7 @@ import About from './About';
 import Contact from './Contact';
 import ProjectView from './ProjectView';
 import Banner from './Banner';
+import TestGround from './TestGround';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -45,6 +46,7 @@ class HomePage extends React.Component {
                         <Route exact path="/projects" component={() => (<Projects />)} />
                         <Route exact path="/about" component={() => (<About />)} />
                         <Route exact path="/contact" component={() => (<Contact />)} />
+                        <Route exact path="/testground" component={() => (<TestGround />)} />
                         <Route exact path="/Trek" component={() => (<ProjectView name={projectData.projects[0].name}
                             description={projectData.projects[0].description}
                             imgUrl={projectData.projects[0].img_url}

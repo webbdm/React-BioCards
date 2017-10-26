@@ -26,16 +26,6 @@ class Resume extends React.Component {
     })
   }
 
-  // componentDidMount () {
-  //   axios.get(`https://teamtreehouse.com/geoffwebb.json`)
-  //     .then((response) => {
-  //       console.log('response', response.data)
-  //     })
-  //     .catch((error) => {
-  //       console.error('axios error', error)
-  //     })
-  // }
-
   render() {
     return (
       <div className="resume">

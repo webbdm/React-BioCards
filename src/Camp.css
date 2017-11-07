@@ -3,7 +3,7 @@
 body {
     background: url("https://raw.githubusercontent.com/nss-evening-cohort-05/challenge-static-web-html-webbdm/master/images/gsmbackground.png") no-repeat center fixed;
     background-size: cover;
-    margin-bottom: 20%;
+    padding-bottom: 70px;
   }
   
   nav {
@@ -76,12 +76,13 @@ body {
   }
   
   footer {
-      position: fixed;
+      position: fixed; 
       left: 0px;
       bottom: 0px;
       height: 60px;
       width: 100%;
-      background-color: rgba(79, 57, 57, 0.68);
+      background-color: #292727;
+      margin-top: 20px;
   }
   
   footer a {
@@ -200,7 +201,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    margin: 10%;
+    margin: 7%;
+    padding-bottom: 50px;
 }
 
 .project-view-image, .project-view-info{
@@ -208,7 +210,7 @@ body {
 }
 
 .project-view-image img{
-    height: 300px;
+    height: 250px;
     width: auto;
     margin: 20px;
     border: 2px solid black;
@@ -398,7 +400,7 @@ body {
 @media(max-width: 650px){
     .myXP h1 {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 55px;
     }
 }
 
@@ -445,15 +447,21 @@ body {
 /* About */
 
 .about-wrapper{
-    max-width: 1100px;
+    /* max-width: 1100px; */
     margin: 7% auto;
-    display: grid;
+    display: flex;
     /* grid-template-columns: 150px 150px;  */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: 300px; 
-    justify-content: center;
-    grid-gap: 120px;
-    padding: 0px 100px;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 300px;  */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* grid-gap: 120px; */
+    padding-bottom: 100px;
+}
+
+.about-wrapper >*{
+    /* flex-grow: 1; */
 }
 
 .about-img{
@@ -471,25 +479,29 @@ body {
     text-align: center;
     font-family: roboto;
     color: white;
+    margin-top: 40px;
 }
 
 .about-wrapper p{
+    max-width: 500px;
+    min-width: 200px;
     margin: 10px;
     /* grid-column: 2 / 2; /* grid-column-start: 5; 
     grid-row:  1 /1; */
 }
 
 .about-info{
-    height: 360px;
+    height: auto;
+    min-width: 300px;
+    margin: 10px;
     padding: 20px;
     border-radius: 4px;
     background-color: rgba(68, 64, 64, 0.79);
-    overflow: auto;
 }
 
 .about-info p{
     color: white;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
    
 }
 

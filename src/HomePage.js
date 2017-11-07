@@ -41,7 +41,7 @@ class HomePage extends React.Component {
                     </div> */}
 
                     <div className="routes">
-                        <Route exact path="/" component={() => (<Banner/>)} />
+                        <Route exact path="/" component={() => (<Projects />)} />
                         <Route exact path="/resume" component={() => (<Profile jobs={this.props.j} bio={this.props.b} />)} />
                         <Route exact path="/projects" component={() => (<Projects />)} />
                         <Route exact path="/about" component={() => (<About />)} />
